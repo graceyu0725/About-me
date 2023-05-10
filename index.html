@@ -1,349 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>今天吃什麼</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+    <title>Grace Yu</title>
+    <style>
+      #left {
+        width: 30%;
+        padding: 16px;
+        text-align: center;
+        color: #613c21;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: fantasy;
+        background-image: url("https://i.pinimg.com/originals/f8/8b/42/f88b42b268c529740b38c5881e33ff7b.png");
+        background-size: 100%;
+        background-attachment: scroll;
+      }
+      #right {
+        width: 70%;
+        font-family: Microsoft JhengHei;
+      }
+
+      #headline {
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #fdf5e6;
+        color: #613c21;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      #content {
+        padding: 5px 40px;
+        align-items: center;
+        background-color: #fdf5e6;
+        color: #313030;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body style="margin: 0">
     <div style="display: flex">
-      <div id="map" style="width: 50%; height: 100vh"></div>
-      <div style="padding: 16px">
-        <h3>今天想吃什麼！！</h3>
-        <input id="search-input" class="form-control" />
+      <!--左半邊-->
+      <div id="left">About me</div>
 
-        <button class="btn btn-primary mt-2" id="add">加入我的最愛</button>
+      <!--右半邊-->
+      <div id="right">
+        <div id="headline"><br />一、個人簡介</div>
+        <div id="content">
+          <span>
+            嗨！我是游珮姿！<br />
+            在工作及學習的過程中，發現自己對用寫程式來解決問題這件事樂此不疲，最終確立想轉職為前端軟體工程師的原因有三個：<br />
+            <ol>
+              <li>享受學習新知的過程、期望能在世界各地工作。</li>
+              <li>
+                工作過程中發現利用寫程式為使用者打造實用的工具替自己帶來更大的成就感。
+              </li>
+              <li>
+                喜歡與人接觸、共感，而前端工程師大多是負責與使用者介面相關功能，是相對較需要與人互動的工程師，期望能結合自己的人格特質，從滿足使用者需求的過程中獲得成就感。
+              </li>
+            </ol>
+            <hr />
+          </span>
+        </div>
 
-        <h4 class="mt-4">我的最愛～～</h4>
-        <ul
-          class="list group list-group-flush list-group-numbered"
-          id="restaurant-list"
-        ></ul>
+        <div id="headline">二、為了成為軟體工程師，曾做過什麼努力？</div>
+        <div id="content">
+          <ol>
+            <li>探索成為前端工程師的興趣 – 動手實作</li>
+            <p>
+              我透過AppWorks School的YouTube影片「網頁前端 Side Project
+              之午餐吃什麼？」，
+              來試著寫出自己的第一個網頁。透過這個影片，一步步跟著實作，
+              然而，過程中還是發生了幾次做出來成果竟然和老師影片中不一樣的情況！
+              不過透過仔細的檢查程式碼，以及查看報錯資訊後，再修修改改，並為自己的輪盤多加幾種顏色，
+              最終順利地完成了，從小小作品中獲得大大成就感！<br />
+              <a href="https://graceyu0725.github.io/What-to-Eat/"
+                >Github Page</a
+              >
+              <a href="https://youtu.be/V90PKt8gVOE">影片呈現</a>
+            </p>
 
-        <button id="draw" class="btn btn-success mt-2">抽籤</button>
+            <li>利用下班時間建立程式基礎 – C++的學習</li>
+            <p>
+              在正式開始工作後，由於想探尋自己對於程式的興趣及建立基礎，
+              我運用平日下班後及假日的時間修習臺大孔令傑教授的
+              <a
+                href="https://www.youtube.com/playlist?list=PLMHSr8fseBzUvwjKtR6pX0Vv9Q9H-V3lY"
+                >C++程式設計課程</a
+              >，
+              除了課程影片外，我也從曾實際在校修過這門課的同學那取得相關的課後練習作業，
+              作業內容為老師針對當次授課內容親自設計的情境題，需從頭思考整體的解題邏輯，而非只是語法的填空題。
+            </p>
+            <ul>
+              <li>學習過程</li>
+              <p>
+                我認為親自思考動手實作的學習效率是遠大於單純聽課的，
+                因此我的學習方式是快速看過課程影片對當次所教的語法有大致印象後，即開始練習作業，
+                先思考並寫下整題的邏輯及流程後，再開始撰寫程式碼。
+                在此課程中學到內容包括基本資料型態、陣列、函式、指標、字串、類別、運算子多載、繼承與多形…等。
+              </p>
 
-        <div
-          id="wheel"
-          style="
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.3);
-            display: none;
-          "
-        >
-          <canvas
-            id="canvas"
-            width="600"
-            height="600"
-            style="
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
-            "
-          >
-          </canvas>
+              <p>
+                在課程中碰到的最大挑戰即是「指標」，當時重複看了三四遍上課片段，對於作業仍然一籌莫展，
+                因此我上網搜尋許多關於指標的說明以及實際案例，並找修過這門課的同學一起討論，才終於完成這一次的作業。
+              </p>
+
+              <li>遇到的挑戰</li>
+              <p>
+                在這門課中除了學習到基本的C++功能，也讓我理解到自己修習線上課程雖不受時間地點限制，
+                但仍有些需要克服的困難。
+              </p>
+
+              <p>
+                第一，是專業的指點，雖然現在網路上充滿各式各樣的學習資源，但對於此領域不熟悉的人，
+                可能需要花上許多時間才能下對關鍵字找到解決方法，因此有專家適時提點才能提升學習效率；
+                第二，是學習的環境，當時下班後及假日我都是一個人看影片、找資料、寫作業，遇到問題時只能尋求網路幫助，
+                然而根據以往的學習經驗，我深信「一個人走得快，一群人走得遠」，透過同儕的討論能激起不同的火花，
+                使我們的思考角度更多元，且透過互相教學、鼓勵，更能鞏固所學到的知識並在學習的道路上持續走下去。
+              </p>
+
+              <p>
+                而上述所提到的兩個點（專業指點、學習環境），也是我這次想申請WeHelp計畫的主要原因，
+                WeHelp計畫有同儕、助教一起解惑，提升學習動力與效果，
+                因此我希望能加入這個培訓計畫，與大家一同成長，成為一名專業的軟體工程師。
+              </p>
+            </ul>
+          </ol>
+          <hr />
+        </div>
+
+        <div id="headline">三、如果參與這個計畫，會怎麼安排學習時間？</div>
+        <div id="content">
+            <p>若有幸能成為此計畫的一員，我預計在六月初離職，全心投入培訓過程。</p>
+            <ul>
+                <li>培訓開始前：約一個月的時間，利用網路資源，打好HTML、CSS、JavaScript的基礎。</li>
+                <li>培訓開始後：按照作業進度安排每週目標，且因過去沒有相關技術背景，預計每週投入70+小時以完成進度及學習新技術。</li>
+                <li>培訓結束後：期望三個月內找到工作，成為一位前端工程師，利用工作之餘的時間持續學習新技術，思考如何應用到工作中，並參與開發者聚會、社群等以拓展業界人脈。</li>
+            </ul>
+            <hr/>
+        </div>
+
+        <div id="headline">四、是否有想要加入的軟體公司？為什麼想加入該公司？</div>
+        <div id="content">
+            <p>我期望未來有機會加入LINE Bank，主要原因有兩個：</p>
+            <ol>
+                <li>純網銀的未來發展趨勢</li>
+                <p>
+                    近年來隨著金融科技的發展，數位服務加速成長，線上通路使用率大增，銀行數位化的發展趨勢使我認為未來針對個人用戶，銀行會轉變為以線上及數位為主的服務型態，此時純網銀就具有相當的優勢。
+                </p>
+                <li>結合自身金融業的背景</li>
+                <p>
+                    由於我過去的學經歷及工作經驗皆和財務、金融業相關，因此希望能運用過去累積的知識及經驗，結合前端工程師的能力，替使用者打造一個方便使用的金融科技平台。
+                </p>
+            </ol>
+            <hr/>
+        </div>
+
+        <div id="headline">五、請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</div>
+        <div id="content">
+            <p>在大學畢業後，我花了約九個月當全職考生，準備考研究所。在準備過程中，小考結果不理想、讀書進度不如預期、擔心達不到所設定的目標…等，都帶來了不小的焦慮感。而面對這樣的負面情緒，我通常會經歷以下三種階段：</p>
+       
+            <ol>
+                <li>察覺並勇敢面對它</li>
+                <p>例如當我感受到因為擔心考不上理想學校而感到焦慮時，我會選擇接受這個情緒，並告訴自己要盡快跳脫沈浸在該情緒的狀況，理性面對、處理。</p>
+
+                <li>抽絲剝繭找出原因</li>
+                <p>有時候我會選擇走出家門，到戶外散步或騎腳踏車，和自己獨處對話，有時候則是會選擇和朋友聊天，不過目的都是花時間仔細思考這個焦慮的來源是什麼。例如是因為小考考不好？讀書進度大落後？或者就只是單純的擔心會落榜？</p>
+
+                <li>找出解方對症下藥</li>
+                <p>接著我會針對造成負面情緒的原因，思考有沒有解決的辦法。例如若只是單純擔心會落榜，我會做好最壞的打算，先想好Plan B、Plan C…，確定自己能接受後，就放下這個負面情緒，繼續往原本的目標前進。</p>
+            </ol>
+            <hr/>
+        </div>
+
+        <div id="headline">六、關於這份申請網頁，請分享一個你開發時的技術心得。</div>
+        <div id="content">
+            <p>
+                之前寫「今天吃什麼？」的練習時，並沒有把HTML跟CSS做切割，導致程式碼看起來有點混亂，透過彭彭老師的入門課程，理解到CSS選擇器的概念，先把CSS樣式集中管理，再利用選擇器決定CSS樣式的適用標籤，方法有Class選擇器、ID選擇器、標籤名稱選擇器，或是把CSS樣式獨立成一個檔案。
+            </p>
+            <p>
+                製作這個申請網頁時，我選擇使用ID選擇器來練習，把樣式集中管理，並上網搜尋一些字型、背景等的寫法。雖然因為時間有限，做出來的成果還非常陽春，不過我也在這過程中體會到自己寫網頁的樂趣，即便已經凌晨兩、三點，隔天還要上班，還是捨不得關上電腦，期望未來能盡快熟悉HTML、CSS、JavaScript三大基石的應用。
+            </p>
+            <hr/>
+        </div>
+
+        <div id="headline">七、其他想要對我們說的事情？</div>
+        <div id="content">
+            <p>我是一個目標導向的人，且喜歡充實、有挑戰的生活，願意不斷學習，個人特質主要有三個，相信這樣的特質有助於我成為一名專業的軟體工程師：</p>
+            <ol>
+                <li>良好的團隊合作能力 – 能與不同類型夥伴合作且樂於分享</li>
+                <p>在工作中，由於產品部門介在前線業務部門及後台作業單位之間，我能夠清楚瞭解各部門職掌，並站在不同部門立場思考，以加速業務流程。比如在客戶到前線業務單位（如：分行）申辦產品時，由於分行處理法人業務的時間有限，我會主動聯繫客戶協助填寫申請單，填寫完整後再把資料交給分行並寫下清楚的送件SOP，讓分行僅需讓客戶用印，減輕其作業負擔。</p>
+                <p>此外，常常會遇到產品部門的同事向我詢問系統或是文書軟體的某項功能如何操作，我都非常樂意替同事解答，若遇到自己也不會的功能，則是會先Google查詢，自己看懂後再協助同事操作。</p>
+
+                <li>高度適應力與學習力 – 享受快速變化的環境，能透過自主學習了解新事物</li>
+                <p>大四上時因想嘗試不同學習環境，曾到西安交通大學交換一學期，大約一星期即熟悉當地生活模式（支付方式、常用APP等），並利用課餘時間與當地認識的朋友一同到了10個不同的城市旅遊。</p>
+                <p>在凱基銀行智慧轉型處實習時，因過去沒有行銷領域相關經驗，自行上網學習數位行銷相關知識並取得Google數位學程之基礎數位行銷資格認證，最終和夥伴們成功搜集到700份問卷完成行銷研究，並直接向多位高階主管報告結果。</p>
+
+                <li>堅持不懈的精神 – 設立目標後會盡全力投入，願意付出時間堅持到底</li>
+                <p>甫加入系排球隊時，因實力、經驗仍不足並無法上場比賽，為提升自身實力並爭取上場比賽機會，和有相同目標的隊友相約，利用課餘時間練習基本功及訓練體能。我們一週練習時間為其他人的2-3倍，在大二時成功從替補球員變為正式球員，並一起創造了近幾年隊上的最佳成績，獲得北經盃殿軍、大經盃亞軍殊榮。</p>
+            </ol>
+            <hr/>
         </div>
       </div>
-    </div>
-
-    <script src="./Winwheel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
-    <script>
-      let map;
-      let currentPosition;
-      let selectedRestaurant;
-      let marker;
-      let directionsService;
-      let directionsRenderer;
-      let infoWindow;
-
-      // 設定地圖初始位置
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 23.553118, lng: 121.0211024 },
-          zoom: 7,
-        });
-
-        // 取得所在位置並放大
-        navigator.geolocation.getCurrentPosition(function (position) {
-          currentPosition = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
-
-          map.setCenter(currentPosition);
-          map.setZoom(16);
-
-          const autocomplete = new google.maps.places.Autocomplete(
-            document.getElementById("search-input"),
-            {
-              types: ["restaurant"],
-              bounds: {
-                east: currentPosition.lng + 0.001,
-                west: currentPosition.lng - 0.001,
-                south: currentPosition.lat - 0.001,
-                north: currentPosition.lat + 0.001,
-              },
-              strictBounds: false,
-            }
-          );
-
-          autocomplete.addListener("place_changed", function () {
-            const place = autocomplete.getPlace();
-
-            selectedRestaurant = {
-              location: place.geometry.location,
-              placeId: place.place_id,
-              name: place.name,
-              address: place.formatted_address,
-              phoneNumber: place.formatted_phone_number,
-              rating: place.rating,
-            };
-
-            // console.log(selectedRestaurant); 顯示詳細資訊
-
-            // 把地圖中心設成所搜尋到的餐廳
-            map.setCenter(selectedRestaurant.location);
-
-            // 顯示餐廳資訊在地圖上
-            if (!marker) {
-              marker = new google.maps.Marker({
-                map: map,
-              });
-            }
-
-            // 設定marker位置
-            marker.setPosition(selectedRestaurant.location);
-
-            if (!directionsService) {
-              directionsService = new google.maps.DirectionsService();
-            }
-
-            if (!directionsRenderer) {
-              directionsRenderer = new google.maps.DirectionsRenderer({
-                map: map,
-              });
-            }
-
-            directionsRenderer.set("directions", null);
-
-            // 取得路線
-            directionsService.route(
-              {
-                origin: new google.maps.LatLng(
-                  currentPosition.lat,
-                  currentPosition.lng
-                ),
-
-                destination: {
-                  placeId: selectedRestaurant.placeId,
-                },
-
-                travelMode: "WALKING",
-              },
-              function (response, status) {
-                if (status === "OK") {
-                  directionsRenderer.setDirections(response);
-
-                  if (!infoWindow) {
-                    infoWindow = new google.maps.InfoWindow();
-                  }
-
-                  infoWindow.setContent(
-                    `
-                        <h3>${selectedRestaurant.name}</h3>
-                        <div>地址：${selectedRestaurant.address}</div>
-                        <div>電話：${selectedRestaurant.phoneNumber}</div>
-                        <div>評分：${selectedRestaurant.rating}</div>
-                        <div>步行時間：${response.routes[0].legs[0].duration.text}</div>
-                        `
-                  );
-                  infoWindow.open(map, marker);
-                }
-              }
-            );
-          });
-        });
-      }
-
-      const restaurantList =
-        JSON.parse(localStorage.getItem("restaurantList")) || [];
-      restaurantList.forEach(function (restaurant) {
-        document.getElementById("restaurant-list").innerHTML += `
-          <li class="list-group-item">
-            ${restaurant.name}
-            <button class="btn-close float-end remove"></button>
-          </li>
-         `;
-      });
-
-      const colors = ["#EDEEC9", "#DDE7C7", "#BFD8BD", "#98C9A3", "#77BFA3"];
-
-      const wheel = new Winwheel({
-        numSegments: restaurantList.length,
-        segments: restaurantList.map((restaurant, index) => {
-          return {
-            fillStyle: colors[index % 5],
-            text: restaurant.name,
-            strokeStyle: "white",
-          };
-        }),
-        pins: true,
-        animation: {
-          type: "spinToStop",
-          spins: 8,
-          easing: "Power4.easeInOut",
-          callbackFinished: function (segment) {
-            document.getElementById("wheel").style.display = "none";
-            wheel.rotationAngle = 0;
-            wheel.draw();
-
-            window.alert(segment.text);
-            const restaurantList =
-              JSON.parse(localStorage.getItem("restaurantList")) || [];
-            selectedRestaurant = restaurantList.find(function (restaurant) {
-              return restaurant.name === segment.text;
-            });
-
-            // console.log(selectedRestaurant); 顯示詳細資訊
-
-            // 把地圖中心設成所搜尋到的餐廳
-            map.setCenter(selectedRestaurant.location);
-
-            // 顯示餐廳資訊在地圖上
-            if (!marker) {
-              marker = new google.maps.Marker({
-                map: map,
-              });
-            }
-
-            // 設定marker位置
-            marker.setPosition(selectedRestaurant.location);
-
-            if (!directionsService) {
-              directionsService = new google.maps.DirectionsService();
-            }
-
-            if (!directionsRenderer) {
-              directionsRenderer = new google.maps.DirectionsRenderer({
-                map: map,
-              });
-            }
-
-            directionsRenderer.set("directions", null);
-
-            // 取得路線
-            directionsService.route(
-              {
-                origin: new google.maps.LatLng(
-                  currentPosition.lat,
-                  currentPosition.lng
-                ),
-
-                destination: {
-                  placeId: selectedRestaurant.placeId,
-                },
-
-                travelMode: "WALKING",
-              },
-              function (response, status) {
-                if (status === "OK") {
-                  directionsRenderer.setDirections(response);
-
-                  if (!infoWindow) {
-                    infoWindow = new google.maps.InfoWindow();
-                  }
-
-                  infoWindow.setContent(
-                    `
-                        <h3>${selectedRestaurant.name}</h3>
-                        <div>地址：${selectedRestaurant.address}</div>
-                        <div>電話：${selectedRestaurant.phoneNumber}</div>
-                        <div>評分：${selectedRestaurant.rating}</div>
-                        <div>步行時間：${response.routes[0].legs[0].duration.text}</div>
-                        `
-                  );
-                  infoWindow.open(map, marker);
-                }
-              }
-            );
-          },
-        },
-      });
-
-      document.getElementById("add").addEventListener("click", function () {
-        document.getElementById("restaurant-list").innerHTML += `
-          <li class="list-group-item">
-            ${selectedRestaurant.name}
-            <button class="btn-close float-end remove"></button>
-          </li>
-         `;
-        const restaurantList =
-          JSON.parse(localStorage.getItem("restaurantList")) || [];
-
-        const color = colors[restaurantList.length % 5]
-        wheel.addSegment({
-          fillstyle: color,
-          text: selectedRestaurant.name,
-          strokeStyle: "white",
-        });
-        wheel.draw();
-
-        restaurantList.push(selectedRestaurant);
-        localStorage.setItem("restaurantList", JSON.stringify(restaurantList));
-      });
-
-      document
-        .getElementById("restaurant-list")
-        .addEventListener("click", function (e) {
-          if (e.target.classList.contains("remove")) {
-            e.target.parentNode.remove();
-
-            const restaurantName = e.target.parentNode.innerText.trim();
-
-            const restaurantList =
-              JSON.parse(localStorage.getItem("restaurantList")) || [];
-
-            const index = restaurantList.findIndex(function (restaurant) {
-              return restaurant.name === restaurantName;
-            });
-            wheel.deleteSegment(index + 1);
-            wheel.draw();
-
-            const newRestaurantList = restaurantList.filter(function (
-              restaurant
-            ) {
-              if (restaurant.name === restaurantName) return false;
-              return true;
-            });
-            localStorage.setItem(
-              "restaurantList",
-              JSON.stringify(newRestaurantList)
-            );
-          }
-        });
-
-      document.getElementById("draw").addEventListener("click", function () {
-        document.getElementById("wheel").style.display = "block";
-        wheel.startAnimation();
-      });
-    </script>
-
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj1cbwic-xj3oEx2JWHU78i0UTvRp-CrY&libraries=places&callback=initMap&region=TW&language=zh-TW"
-    ></script>
   </body>
 </html>
+
+<!--這是註解-->
