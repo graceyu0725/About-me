@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grace Yu</title>
+    <link rel="shortcut icon" type="image/png" href="favicon32.png"/>
+    <link rel="apple-touch-icon" href="favicon32.png">
     <style>
       #left {
         width: 30%;
         padding: 16px;
-        text-align: center;
         color: #613c21;
         font-size: 2rem;
-        font-weight: bold;
-        font-family: fantasy;
         background-image: url("https://i.pinimg.com/originals/f8/8b/42/f88b42b268c529740b38c5881e33ff7b.png");
         background-size: 100%;
         background-attachment: scroll;
@@ -41,16 +40,56 @@
         font-size: 1rem;
         line-height: 1.6;
       }
+
+      #left_headline {
+        font-weight: bold;
+        font-family: fantasy;
+        padding: 5px 40px;
+        align-items: center;
+        color: #613c21;
+        font-size: 2rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      #left_content {
+        font-family: Microsoft JhengHei;
+        padding: 5px 40px;
+        align-items: left;
+        color: #613c21;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        background-color: #fdf5e6aa;
+
+      }
+
+      a:active{color:#613c21}
+      a:link{color:#613c21}
+      a:visited{color:#a98b73}
+
     </style>
   </head>
   <body style="margin: 0">
     <div style="display: flex">
       <!--左半邊-->
-      <div id="left">About me</div>
+      <div id="left">
+        <h4 id="left_headline">About me</h4>
+        <ul id="left_content">
+        <li><a href="#intro">個人簡介</a></li>
+        <li><a href="#work">為了成為軟體工程師，曾做過什麼努力？</a></li>
+        <li><a href="#time">如果參與這個計畫，會怎麼安排學習時間？</a></li>
+        <li><a href="#company">是否有想要加入的軟體公司？為什麼想加入該公司？</a></li>
+        <li><a href="#mood">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</a></li>
+        <li><a href="#tech">關於這份申請網頁，請分享一個你開發時的技術心得</a></li>
+        <li><a href="#others">其他想要對我們說的事情？</a></li>
+        </ul>
+
+      </div>
+
 
       <!--右半邊-->
       <div id="right">
-        <div id="headline"><br />一、個人簡介</div>
+        <a name="intro"></a><div id="headline"><br />一、個人簡介</div>
         <div id="content">
           <span>
             嗨！我是游珮姿！<br />
@@ -68,7 +107,8 @@
           </span>
         </div>
 
-        <div id="headline">二、為了成為軟體工程師，曾做過什麼努力？</div>
+        <a name="work"></a><div id="headline"><br/>二、為了成為軟體工程師，曾做過什麼努力？</div>
+
         <div id="content">
           <ol>
             <li>探索成為前端工程師的興趣 – 動手實作</li>
@@ -134,18 +174,23 @@
           <hr />
         </div>
 
-        <div id="headline">三、如果參與這個計畫，會怎麼安排學習時間？</div>
+        <a name="time"></a><div id="headline">三、如果參與這個計畫，會怎麼安排學習時間？</div>
         <div id="content">
             <p>目前是透過下班後及假日時間，利用網路影片學習HTML、CSS、JavaScript基礎，若有幸能成為此計畫的一員，預計在六月初離職，全心投入培訓過程。</p>
             <ul>
                 <li>培訓開始前：約一個月的時間，繼續利用<a href="https://www.bilibili.com/video/BV14J4114768/?spm_id_from=333.337.search-card.all.click&vd_source=3e270fbed4f02eaa576570771f6cf9fc">網路資源</a>，打好HTML、CSS、JavaScript的基礎。</li>
-                <li>培訓開始後：按照作業進度安排每週目標，且因過去沒有相關技術背景，預計每週投入70+小時以完成進度及學習技術。（時間如同現在上班時間及下班後的時間安排：9:00~12:00、13:00~18:00、19:30~22:30，並做好這半年多會犧牲掉一些休閒娛樂時間的心理準備。）</li>
+                <li>培訓開始後：按照作業進度安排每週目標，且因過去沒有相關技術背景，預計每週投入70+小時以完成進度及學習技術。</li>
+                  <ol>
+                    <li>自行學習 - 學習時間預計如同現在上班時間及下班後的時間安排：9:00~12:00、13:00~18:00、19:30~22:30，並做好這半年多會犧牲掉一些休閒娛樂時間的心理準備。</li>
+                    <li>同儕交流 - 由於此計畫大部分為線上模式，期望可與其他學員組成讀書會，每週利用半天時間，交流技術與當週學習心得，成為互相扶持的夥伴。</li>
+                    <li>適當休息 - 我通常將每天分為三大時段（早、中、晚），預計將每週日晚上的時段留空，作為緩衝，根據當週情況決定要追趕進度或適時休息，以維持一週的學習效率，避免過度疲乏。</li>
+                  </ol>
                 <li>培訓結束後：期望三個月內找到工作，成為一位前端工程師，利用工作之餘的時間持續學習新技術，思考如何應用到工作中，並參與開發者聚會、社群等以拓展業界人脈。</li>
             </ul>
             <hr/>
         </div>
 
-        <div id="headline">四、是否有想要加入的軟體公司？為什麼想加入該公司？</div>
+        <a name="company"></a><div id="headline">四、是否有想要加入的軟體公司？為什麼想加入該公司？</div>
         <div id="content">
             <p>我期望未來有機會加入LINE Bank，主要原因有兩個：</p>
             <ol>
@@ -161,7 +206,7 @@
             <hr/>
         </div>
 
-        <div id="headline">五、請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</div>
+        <a name="mood"></a><div id="headline">五、請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</div>
         <div id="content">
             <p>在大學畢業後，我花了約九個月當全職考生，準備考研究所。在準備過程中，小考結果不理想、讀書進度不如預期、擔心達不到所設定的目標…等，都帶來了不小的焦慮感。而面對這樣的負面情緒，我通常會經歷以下三種階段：</p>
        
@@ -178,7 +223,7 @@
             <hr/>
         </div>
 
-        <div id="headline">六、關於這份申請網頁，請分享一個你開發時的技術心得。</div>
+        <a name="tech"><div id="headline">六、關於這份申請網頁，請分享一個你開發時的技術心得。</div>
         <div id="content">
             <p>
                 之前寫「今天吃什麼？」的練習時，並沒有把HTML跟CSS做切割，導致程式碼看起來有點混亂，透過彭彭老師的入門課程，理解到CSS選擇器的概念，先把CSS樣式集中管理，再利用選擇器決定CSS樣式的適用標籤，方法有Class選擇器、ID選擇器、標籤名稱選擇器，或是把CSS樣式獨立成一個檔案。
@@ -189,7 +234,7 @@
             <hr/>
         </div>
 
-        <div id="headline">七、其他想要對我們說的事情？</div>
+        <a name="others"><div id="headline">七、其他想要對我們說的事情？</div>
         <div id="content">
             <p>｜個性｜</p>
             <p>我是一個目標導向的人，且喜歡充實、有挑戰的生活，願意不斷學習，個人特質主要有三個，相信這樣的特質有助於我成為一名專業的軟體工程師：</p>
@@ -222,6 +267,7 @@
 
 
             <hr/>
+            <a href="#intro">回頁首</a>
         </div>
       </div>
   </body>
